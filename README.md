@@ -12,7 +12,7 @@ BrightDSMS is a basic and discrete digital signage management system designed to
 
 1. Utilizing a Apache2 + PHP enabled web server, clone this repository to your `/var/www/html/` directory.
 
-2. Inside of `/var/www/html/BrightDSMS/` create `endpoints.json` and use the following basic JSON formatting to create and edit your endpoints. Create a `"404"` entry to control where clients should be redirected in the event that one attempts to access and endpoint that does not exist.
+2. Inside of `/var/www/html/BrightDSMS/` create `endpoints.json` and use the following basic JSON formatting to create and edit your endpoints. Create a `"404"` entry to control where clients should be redirected in the event that one attempts to access and endpoint that does not exist. If you do not create this endpoint, clients will instead be redirected to a black screen.
 
 ```json
 {
