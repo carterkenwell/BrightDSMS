@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^([A-Za-z0-9]+)$ index.php?sn=$1 [L,QSA]
