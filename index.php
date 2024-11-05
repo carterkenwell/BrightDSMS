@@ -63,7 +63,7 @@ if (isset($_GET['sn'])) {
                 .then(response => response.json())
                 .then(data => {
                     if (data.refresh === true) {
-                        window.location.reload();
+                        window.location.href = window.location.pathname + "?t=" + new Date().getTime();
                     }
                 });
         }, 5000);  // Timer
