@@ -24,14 +24,14 @@ if (file_exists($endpointFile)) {
     }
 }
 
-//logic for client to request the proper endpoint based on URL input. Redirects to https://www.ualberta.ca if invalid URL is entered.
+//logic for client to request the proper endpoint based on URL input. Redirects to the 404 endpoint if invalid URL is entered.
 if (isset($_GET['sn'])) {
     $sn = $_GET['sn'];
     $sn = isset($_GET['sn']) ? $_GET['sn'] : 'unknown';
-    $contentLink = isset($iframeLink[$sn]) ? $iframeLink[$sn] : 'https://www.ualberta.ca';
+    $contentLink = isset($iframeLink[$sn]) ? $iframeLink[$sn] : $iframeLink[404];
         
 } else {
-    $contentLink = 'https://www.ualberta.ca';
+    $contentLink = $iframeLink[404];
 }
 ?>
 
@@ -59,7 +59,7 @@ if (isset($_GET['sn'])) {
     <script>
         //checks the refresh status of whichever endpoint has been selected in the base URL, if true, reload.
         setInterval(function() {
-            fetch('/redirecttest/refresh-status.php?sn=<?php echo htmlspecialchars($sn); ?>')
+            fetch('/BrightDSMS/refresh-status.php?sn=<?php echo htmlspecialchars($sn); ?>')
                 .then(response => response.json())
                 .then(data => {
                     if (data.refresh === true) {
