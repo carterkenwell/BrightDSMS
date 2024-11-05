@@ -23,13 +23,13 @@ BrightDSMS is a basic and discrete digital signage management system designed to
 }
 ```
 
-> Note: For some websites such as published Google Slide links and/or other websites that may include unwanted UI elements, you may attach `&amp;rm=minimal` to the end of the URL to remove them and just display the body content of the website itself.
+> Note: For some websites such as published Google Slide links and/or other websites that may include unwanted UI elements, you may want to attach `&rm=minimal` to the end of the URL to remove them and just display the body content of the website itself.
 
 
 
 ## Configuring clients:
 
-1. Using any browser, point your client to [http://[Your Server]/BrightDSMS/endpoint\_name](<http://[Your Server]/BrightDSMS/endpoint_name>) and verify that your endpoint creation was successful.
+1. Using any browser, point your client to [http://[Your Server]/BrightDSMS/endpoint\_name](<http://[Your Server]/BrightDSMS/endpoint_name>) and verify that your endpoint.json file creation was successful.
 
 
 
