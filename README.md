@@ -43,5 +43,5 @@ BrightDSMS is a basic and discrete digital signage management system designed to
 
 ## Refreshing clients:
 
-1. Using any browser, visit [http://[Your Server]/BrightDSMS/trigger-refresh.php?sn=endpoint\_name](<http://%5BYour%20Server%5D/BrightDSMS/trigger-refresh.php?sn=endpoint_name>), upon loading this page a refresh will be sent out to all clients listening on the respective endpoint stated in `?sn=endpoint_name` at the end of the url. Reload this page, or modify the URL to refresh again. Refreshes take approximately 6 seconds to give all clients adequate time to catch the refresh call.
+1. Using any browser, visit [http://[Your Server]/BrightDSMS/trigger-refresh.php?sn=endpoint\_name](<http://%5BYour%20Server%5D/BrightDSMS/trigger-refresh.php?sn=endpoint_name>), upon loading this page you will be greeted with a screen displaying the endpoint name provided in the URL and a button to manually trigger the refresh. Upon clicking the button a refresh will be sent out to all clients listening on the respective endpoint stated in `?sn=endpoint_name` at the end of the url. Press the button again, or modify the URL to a new endpoint to refresh again. Refreshes take approximately 6 seconds to give all clients adequate time to catch the refresh call.
 
