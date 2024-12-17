@@ -71,9 +71,9 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
     <h1>Trigger Refresh</h1>
 
     <?php if ($sn === 'unknown'): ?>
-        <p>Serial number not provided. Please include it in the URL as ?sn=[Serial Number]</p>
+        <p>Endpoint name not provided. Please include it in the URL as ?sn=[Serial Number]</p>
     <?php else: ?>
-        <p>Serial Number: <strong><?php echo htmlspecialchars($sn); ?></strong></p>
+        <p>Endpoint: <strong><?php echo htmlspecialchars($sn); ?></strong></p>
         <form method="POST" action="trigger-refresh.php?sn=<?php echo urlencode($sn); ?>">
             <button type="submit" name="trigger_refresh">Trigger Refresh</button>
         </form>
